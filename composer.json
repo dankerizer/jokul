@@ -1,0 +1,36 @@
+{
+    "name": "dankedev/jokul",
+    "description": "Un-Official Laravel Package for Doku / Jokul Payment Gateway",
+    "license": "MIT",
+    "type": "library",
+    "minimum-stability": "dev",
+
+    "require": {
+        "php": "^7.3|^8.0",
+        "ext-json": "*",
+        "ext-curl": "*",
+        "vlucas/phpdotenv": "^5.3"
+    },
+    "authors": [
+        {
+            "name": "Hadie Danker",
+            "email": "hadie87@gmail.com"
+        },
+        {
+            "name": "Dankedev",
+            "email": "hadie87@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Dankerizer\\Jokul\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dankerizer\\Jokul\\DokuJokulServiceProvider"
+            ]
+        }
+    }
+}
